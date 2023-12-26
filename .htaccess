@@ -1,0 +1,10 @@
+# Aktiviere RewriteEngine
+RewriteEngine On 
+
+# Leite alle Anfragen auf die 404.php Datei um, wenn die angefragte Datei nicht existiert
+ErrorDocument 404 /assets/404.html
+
+# Stelle sicher, dass die 404.php Seite nicht selbst eine 404-Abfrage auslöst
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* /assets/404.html [L]

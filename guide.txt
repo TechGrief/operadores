@@ -1,0 +1,10 @@
+create new tables:
+
+->CREATE TABLE `accounts` (`id` BIGINT NOT NULL AUTO_INCREMENT , `name` VARCHAR(64) NOT NULL DEFAULT 'Unknown' , `email` VARCHAR(128) NOT NULL DEFAULT 'Unknown@domain' , `phone` varchar(32) NOT NULL DEFAULT '0' , `start_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `active` BOOLEAN NULL DEFAULT NULL , `end_date` TIMESTAMP NULL DEFAULT NULL , `admin` BOOLEAN NULL DEFAULT NULL , `level` INT NULL DEFAULT NULL , `password` VARCHAR(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+OLD->CREATE TABLE `rjoesltx_operadores`.`shifts`( `id` BIGINT NOT NULL AUTO_INCREMENT, `name` VARCHAR(64) NOT NULL, `description` INT NOT NULL, `weekday` TINYINT(7) NOT NULL, `start_time` TIME NOT NULL, `end_time` TIME NOT NULL, PRIMARY KEY(`id`) ) ENGINE = InnoDB;
+
+->CREATE TABLE `shifts` (`id` BIGINT NOT NULL AUTO_INCREMENT , `name` VARCHAR(64) NOT NULL DEFAULT 'Undefined-Shift' , `description` VARCHAR(255) NULL DEFAULT NULL , `shifts` JSON NOT NULL , `priority` TINYINT(16) NOT NULL DEFAULT '0' , `date_start` DATE NOT NULL , `date_end` DATE NOT NULL , `active` BOOLEAN NULL DEFAULT TRUE, PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+->CREATE TABLE `reg_keys` (`key` varchar(32) NOT NULL);
+Add this key if you want to use SETUP, this key grants admin rights to first generated user (ONLY IF /index.php?setup IS USED!): KEYWILLBEDELETEDAFTERFIRSTUSE
