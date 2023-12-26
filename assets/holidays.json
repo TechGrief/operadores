@@ -1,0 +1,35 @@
+{
+    "Neujahr": {
+      "day": "01-01"
+    },
+    "Tag der Schlacht von San Lorenzo": {
+      "day": "02-03"
+    },
+    "Heldengedenktag":{
+      "day": "03-01"
+    },
+    "Tag der Arbeit":{
+      "day": "05-01"
+    },
+    "Tag der Unabhängigkeit":{
+      "day": "05-15"
+    },
+    "Chaco-Krieg-Gedenktag":{
+      "day": "06-12"
+    },
+    "Gründung von Asunción":{
+      "day": "08-15"
+    },
+    "Schlacht von Boquerón":{
+      "day": "09-29"
+    },
+    "Maria Empfängnis":{
+      "day": "12-08"
+    },
+    "Weihnachten":{
+      "day": "12-25"
+    },
+    "2 ter Weihnachtstag":{
+      "day": "12-26"
+    }
+  }
